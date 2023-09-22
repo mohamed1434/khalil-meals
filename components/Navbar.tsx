@@ -89,7 +89,7 @@ const Navbar = () => {
       </div>
 
       <Link href={socialIcons[1].link}>
-        <button className="text-black mr-5 border-black border-2 px-6 py-3 text-lg rounded-full ml-4">
+        <button className="text-black mr-5 border-black border-2 px-4 py-3 text-lg rounded-full ml-4">
           Place An Order
         </button>
       </Link>

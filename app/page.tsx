@@ -3,6 +3,7 @@ import AboutUs from "@/components/AboutUs";
 import Card from "@/components/Card";
 import CircleCard from "@/components/CircleCard";
 import Hero from "@/components/Hero";
+import { Reveal } from "@/components/Reveal";
 import Slider from "@/components/Slider";
 import { cardItems, circleCardItems } from "@/constants";
 import Image from "next/image";
@@ -11,46 +12,66 @@ export default function Home() {
   return (
     <>
       <Hero />
+
       <div id="" className="h-screen bg-[#191717] mt-12 p-6 flex items-center">
         <div className="flex xl:flex-col flex-col gap-5 relative z-0 max-w-[1240px] mx-auto items-center">
-          <h1 className="2xl:text-[72px] sm:text-[64px] text-[38px] font-extrabold text-white">
-            Why choose US ?
-          </h1>
-          <p className="text-[12px] text-center sm:text-[27px] text-white font-light mt-5">
-            Delicious, Nutritious, and ready for you. Your healthy meal solution
-            is just a bite away!
-          </p>
-          <div className="flex items-center justify-between flex-col md:flex-row gap-6">
-            {cardItems.map((item) => (
-              <Card icon={item.icon} title={item.title} desc={item.desc} />
-            ))}
-          </div>
+          <Reveal>
+            <h1 className="2xl:text-[72px] sm:text-[64px] text-[38px] font-extrabold text-white">
+              Why choose US ?
+            </h1>
+          </Reveal>
+
+          <Reveal>
+            <p className="text-[12px] text-center sm:text-[27px] text-white font-light mt-5">
+              Delicious, Nutritious, and ready for you. Your healthy meal
+              solution is just a bite away!
+            </p>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex items-center justify-between flex-col md:flex-row gap-6">
+              {cardItems.map((item) => (
+                <Card icon={item.icon} title={item.title} desc={item.desc} />
+              ))}
+            </div>
+          </Reveal>
         </div>
       </div>
 
       <div className="h-screen mt-12 p-6 flex items-center">
         <div className="flex xl:flex-col flex-col gap-5 relative z-0 max-w-[1240px] mx-auto items-center">
           <div className="flex flex-row">
-            <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold text-[#191717]">
-              Best Sellers
-            </h1>
-            <Image
-              src="/assets/bolt.webp"
-              alt="Bolt Logo"
-              width={100}
-              height={50}
-              className="object-contain"
-            />
+            <Reveal>
+              <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold text-[#191717]">
+                Best Sellers
+              </h1>
+            </Reveal>
+
+            <Reveal>
+              <Image
+                src="/assets/bolt.webp"
+                alt="Bolt Logo"
+                width={100}
+                height={50}
+                className="object-contain"
+              />
+            </Reveal>
           </div>
-          <p className="text-[17px] text-center sm:text-[27px] text-[#191717] font-light mt-5">
-            Indulge in our top picks, a mouthwatering selection that defines
-            excellence in taste.
-          </p>
-          <div className="flex flex-row gap-4">
-            {circleCardItems.map((item) => (
-              <CircleCard name={item.name} img={item.img} />
-            ))}
-          </div>
+
+          <Reveal>
+            <p className="text-[17px] text-center sm:text-[27px] text-[#191717] font-light mt-5">
+              Indulge in our top picks, a mouthwatering selection that defines
+              excellence in taste.
+            </p>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex flex-row gap-4">
+              {circleCardItems.map((item) => (
+                <CircleCard name={item.name} img={item.img} />
+              ))}
+            </div>
+          </Reveal>
         </div>
       </div>
 
@@ -61,13 +82,17 @@ export default function Home() {
         <div className="flex xl:flex-col flex-col gap-5 relative z-0 w-full sm:max-w-[1240px] mx-auto items-center">
           {" "}
           {/**flex xl:flex-col flex-col gap-5 relative z-0 w-[70%] sm:max-w-[1240px] mx-auto items-center */}
-          <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold text-white">
-            All our Recipes
-          </h1>
-          <p className="text-[17px] text-center sm:text-[27px] text-[#F7F7F7] font-light mt-5">
-            Check all our recipes, <b>SWIPE</b> to check everything and{" "}
-            <b>PRESS</b> to view more details.
-          </p>
+          <Reveal>
+            <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold text-white">
+              All our Recipes
+            </h1>
+          </Reveal>
+          <Reveal>
+            <p className="text-[17px] text-center sm:text-[27px] text-[#F7F7F7] font-light mt-5">
+              Check all our recipes, <b>SWIPE</b> to check everything and{" "}
+              <b>PRESS</b> to view more details.
+            </p>
+          </Reveal>
           <Slider />
         </div>
       </div>

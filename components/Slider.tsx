@@ -10,6 +10,7 @@ import { food } from "@/constants";
 import { Pagination } from "swiper/modules";
 import CarDetails from "./CardDetails";
 import { useState } from "react";
+import { Reveal } from "./Reveal";
 
 const Slider = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,21 +46,23 @@ const Slider = () => {
               <div
                 onClick={() => {
                   setIsOpen(true);
-                  setItemIndex(item.id)
+                  setItemIndex(item.id);
                 }}
                 className="flex flex-col w-full sm:h-full h-[200px] sm:w-full items-center border-2 border-white p-2 rounded-xl bg-[#F7F7F7]" //flex flex-col w-full items-center border-2 border-white p-6 rounded-xl bg-[#F7F7F7]
               >
-                <div className="relative w-full sm:w-full sm:h-60 h-40 bg-pattern bg-cover bg-center rounded-lg"> {/**"relative w-full h-60 bg-pattern bg-cover bg-center rounded-lg" */}
-                <Image
-                  src={item.img}
-                  alt={item.name}
-                  // width={300}
-                  // height={40}
-                  fill 
-                  priority
-                  className="object-contain"
+                <div className="relative w-full sm:w-full sm:h-60 h-40 bg-pattern bg-cover bg-center rounded-lg">
+                  {" "}
+                  {/**"relative w-full h-60 bg-pattern bg-cover bg-center rounded-lg" */}
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    // width={300}
+                    // height={40}
+                    fill
+                    priority
+                    className="object-contain"
                   />
-                  </div>
+                </div>
                 {/* <img className="w-40 h-40" src={item.img} /> */}
                 <p className="text-[#191717] font-extrabold text-center sm:text-[27px] text-[16px] mt-5">
                   {item.name}
