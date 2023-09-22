@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <div className="h-screen bg-[#191717] mt-12 p-6 flex items-center">
         <div className="flex xl:flex-col flex-col gap-5 relative z-0 max-w-[1240px] mx-auto items-center">
-          <h1 className="2xl:text-[72px] sm:text-[64px] text-[40px] font-extrabold text-white">
+          <h1 className="2xl:text-[72px] sm:text-[64px] text-[38px] font-extrabold text-white">
             Why choose US ?
           </h1>
           <p className="text-[12px] text-center sm:text-[27px] text-white font-light mt-5">
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#191717] h-screen mt-12 p-6 flex items-center justify-center">
-        <div className="flex xl:flex-col flex-col gap-5 relative z-0 w-[70%] sm:max-w-[1240px] mx-auto items-center">
+        <div className="flex xl:flex-col flex-col gap-5 relative z-0 w-full sm:max-w-[1240px] mx-auto items-center"> {/**flex xl:flex-col flex-col gap-5 relative z-0 w-[70%] sm:max-w-[1240px] mx-auto items-center */}
           <h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold text-white">
             All our Recipes
           </h1>

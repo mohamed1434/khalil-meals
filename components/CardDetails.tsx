@@ -82,7 +82,7 @@ const CarDetails = ({ isOpen, closeModal, index }: CarDetailsProps) => {
                           key={key}
                         >
                           <h4 className="text-gray capitalize">
-                            {key.split("_").join(" ")}g
+                            {key.split("_").join(" ")}
                           </h4>
                           <p className="text-black-100 font-semibold">
                             {value}g

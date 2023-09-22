@@ -18,7 +18,7 @@ const Slider = () => {
     <>
       <Swiper
         modules={[Pagination]}
-        slidesPerView={1}
+        slidesPerView={2}
         spaceBetween={10}
         breakpoints={{
           640: {
@@ -26,7 +26,7 @@ const Slider = () => {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
           1024: {
@@ -37,7 +37,7 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
-        className="flex justify-center w-full sm:w-full items-center h-[10%] sm:h-[50%]"
+        className="flex justify-center w-full sm:w-full items-center h-[50%] sm:h-[50%]" //flex justify-center w-full sm:w-full items-center h-[100px] sm:h-[50%] bg-red-500
       >
         {food.map((item, index) => (
           <>
@@ -47,9 +47,9 @@ const Slider = () => {
                   setIsOpen(true);
                   setItemIndex(item.id)
                 }}
-                className="flex flex-col w-full items-center border-2 border-white p-6 rounded-xl bg-[#F7F7F7]"
+                className="flex flex-col w-full sm:h-full h-[200px] sm:w-full items-center border-2 border-white p-2 rounded-xl bg-[#F7F7F7]" //flex flex-col w-full items-center border-2 border-white p-6 rounded-xl bg-[#F7F7F7]
               >
-                <div className="relative w-full h-60 bg-pattern bg-cover bg-center rounded-lg">
+                <div className="relative w-full sm:w-full sm:h-60 h-40 bg-pattern bg-cover bg-center rounded-lg"> {/**"relative w-full h-60 bg-pattern bg-cover bg-center rounded-lg" */}
                 <Image
                   src={item.img}
                   alt={item.name}
@@ -61,7 +61,7 @@ const Slider = () => {
                   />
                   </div>
                 {/* <img className="w-40 h-40" src={item.img} /> */}
-                <p className="text-[#191717] font-extrabold text-center text-[27px] mt-5">
+                <p className="text-[#191717] font-extrabold text-center sm:text-[27px] text-[16px] mt-5">
                   {item.name}
                 </p>
               </div>
