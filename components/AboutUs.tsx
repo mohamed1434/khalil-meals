@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="flex xl:flex-row flex-col gap-1 relative mt-12 z-0 max-w-[1240px] mx-auto">
+    <div id="about" className="flex xl:flex-row flex-col gap-1 relative mt-12 z-0 max-w-[1240px] mx-auto">
       {/* <div className="xl:flex-[1.5] flex justify-center items-end w-full bg-red-900 xl:h-screen">
         <div className="relative xl:w-[60%] w-[90%] xl:h-screen h-[690px] z-0">
           <Image

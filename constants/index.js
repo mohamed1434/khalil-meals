@@ -1,16 +1,40 @@
-import { Car, Hamburger, InstagramLogo, Money, Package, WhatsappLogo } from "phosphor-react";
+import {
+  Car,
+  Hamburger,
+  InstagramLogo,
+  Money,
+  Package,
+  WhatsappLogo,
+} from "phosphor-react";
 
-export const navbarItems = ["Home", "About", "Contact", "Menu"];
+export const navbarItems = [
+  {
+    name: "Home",
+    id: "home",
+  },
+  {
+    name: "Menu",
+    id: "menu",
+  },
+  {
+    name: "About",
+    id: "about",
+  },
+  {
+    name: "Contact",
+    id: "contact",
+  },
+]; //"Home", "Menu", "About", "Contact"
 
 export const cardItems = [
   {
     title: "Fresh Food",
-    desc: "Delicious and fresh everyday food using choicest raw materials, delivered to your doorstep.",
+    desc: "Freshly prepared meals made from the finest ingredients, conveniently delivered to your door every day.",
     icon: <Hamburger size={36} color="#191717" weight="bold" />,
   },
   {
     title: "Low Prices",
-    desc: "We offer high quality, fresh ingredients healthy food at affordable prices.",
+    desc: "We offer high quality, fresh ingredients, healthy food at affordable prices.",
     icon: <Money size={36} color="#191717" weight="bold" />,
   },
   {
@@ -41,6 +65,19 @@ export const food = [
     name: "Chicken Curry",
     img: "/assets/pasta.png",
     macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Pasta + Pink Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
   },
   {
     id: 1,
@@ -74,7 +111,7 @@ export const socialIcons = [
     icon: <InstagramLogo size={36} color="#F7F7F7" weight="bold" />,
   },
   {
-    link : "https://wa.me/+36705590083",
+    link: "https://wa.me/+36705590083",
     icon: <WhatsappLogo size={36} color="#F7F7F7" weight="bold" />,
-  }
+  },
 ];
