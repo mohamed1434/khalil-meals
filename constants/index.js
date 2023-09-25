@@ -219,7 +219,7 @@ export const food = [
   {
     id: 8,
     name: "Pink Pasta",
-    img: "/assets/pinkPasta.png",
+    img: "/assets/pasta.png",
     macros: { chicken: 250, carbs: 300 },
     ingredients: [
       {
