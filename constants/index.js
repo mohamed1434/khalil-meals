@@ -54,11 +54,11 @@ export const circleCardItems = [
     img: "/assets/chickenCurry.jpg",
   },
   {
-    name: "Chow Mein Noodles",
+    name: "Chicken Noodles",
     img: "/assets/chowMein.jpg",
   },
   {
-    name: "Chicken Curry",
+    name: "Chicken Mushroom",
     img: "/assets/creamyChicken.jpg",
   },
 ];
@@ -67,11 +67,11 @@ export const food = [
   {
     id: 0,
     name: "Chicken Curry",
-    img: "/assets/pasta.png",
+    img: "/assets/curry.png",
     macros: { chicken: 250, carbs: 300 },
     ingredients: [
       {
-        name: "Pasta + Pink Sauce",
+        name: "Rice",
         quantity: "300g",
         calories: "495",
       },
@@ -85,27 +85,250 @@ export const food = [
   },
   {
     id: 1,
-    name: "Chow Mein Noodles",
-    img: "/assets/chowMein.jpg",
+    name: "Chicken Burrito",
+    img: "/assets/chickenBurrito.png",
     macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Bread + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
   },
   {
     id: 2,
-    name: "Pasta Curry",
-    img: "/assets/creamyChicken.jpg",
+    name: "Kafta with Rice",
+    img: "/assets/kaftaRice.png",
     macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Rice",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Kafta",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
   },
   {
     id: 3,
-    name: "Noodles Curry",
-    img: "/assets/pasta.png",
+    name: "Lasgna",
+    img: "/assets/lasgna.png",
     macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Lasgna + Cheese + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Meat",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
   },
   {
     id: 4,
-    name: "Ramen Curry",
-    img: "/assets/pasta.png",
+    name: "White Pasta",
+    img: "/assets/whitePasta.png",
     macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Pasta + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 5,
+    name: "Chicken Wrap",
+    img: "/assets/chickenWrap.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Tortilla + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 6,
+    name: "Butter Chicken",
+    img: "/assets/butterChicken.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Rice",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 7,
+    name: "Chicken Noodles",
+    img: "/assets/chickenNoodels.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Noodles",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 8,
+    name: "Pink Pasta",
+    img: "/assets/pinkPasta.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Pasta + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 9,
+    name: "Chicken Biryani",
+    img: "/assets/chickenBiryani.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Rice",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 10,
+    name: "Chicken Mushroom",
+    img: "/assets/chickenMushroom.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Rice",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 11,
+    name: "Lemon Pepper Chicken",
+    img: "/assets/lemonPepper.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Tortilla + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 12,
+    name: "Shawarma",
+    img: "/assets/shawarma.webp",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Tortilla + Sauce",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
+  },
+  {
+    id: 13,
+    name: "Pesto Pasta",
+    img: "/assets/pestoPasta.png",
+    macros: { chicken: 250, carbs: 300 },
+    ingredients: [
+      {
+        name: "Pasta",
+        quantity: "300g",
+        calories: "495",
+      },
+      {
+        name: "Chicken",
+        quantity: "250g",
+        calories: "413",
+      },
+    ],
+    totalCalories: 913,
   },
 ];
 
@@ -125,20 +348,24 @@ export const prices = [
     name: "Basic",
     cost: 50.000,
     duration: "2 weeks",
+    text: "Hello, I would like to get the Basic subscription :)"
   },
   {
     name: "Standard",
     cost: 90.000,
     duration: "1 month",
+    text: "Hello, I would like to get the Standard subscription :)"
   },
   {
     name: "Advanced",
     cost: 160.000,
     duration: "2 months",
+    text: "Hello, I would like to get the Advanced subscription :)"
   },
   {
     name: "Premium",
     cost: 240.000,
     duration: "3 months",
+    text: "Hello, I would like to get the Premium subscription :)"
   },
 ]

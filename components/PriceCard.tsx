@@ -1,12 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 interface Props {
   name: string;
   cost: number;
   duration: string;
+  text: string;
 }
 
-const PriceCard = ({ name, cost, duration }: Props) => {
+const PriceCard = ({ name, cost, duration, text }: Props) => {
   return (
     <div
       className="group w-full h-24 bg-white rounded-2xl shadow-lg p-14 flex flex-col items-center
@@ -17,15 +19,21 @@ const PriceCard = ({ name, cost, duration }: Props) => {
         {name}
       </h1>
       <h2 className="relative text-[16px] -inset-x-6 md:text-[26px]">
-        Ft {cost},000 <span className="absolute bottom-0 text-[18px]">/month</span>
+        Ft {cost},000{" "}
+        <span className="absolute bottom-0 text-[16px]">{`${
+          name === "Basic" ? "/2weeks" : "/month"
+        }`}</span>
       </h2>
       <p className="text-[12px] md:text-[16px]">{duration} of prep meals</p>
-      <button
-        className="bg-[#171919] text-[#F7F7F7] rounded-xl 
-      px-4 group-hover:bg-[#F7F7F7] group-hover:text-[#171919] md:p-2 text-[14px]"
-      >
-        Get Started
-      </button>
+
+      <Link href={`https://wa.me/+36705590083?text=${text}`}>
+        <button
+          className="bg-[#171919] text-[#F7F7F7] rounded-xl 
+        px-4 group-hover:bg-[#F7F7F7] group-hover:text-[#171919] md:p-2 text-[14px]"
+        >
+          Get Started
+        </button>
+      </Link>
     </div>
   );
 };

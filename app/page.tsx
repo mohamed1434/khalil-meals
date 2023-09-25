@@ -120,7 +120,12 @@ export default function Home() {
           {/* <Reveal> */}
           <div className="flex flex-wrap items-center justify-between flex-col md:flex-row md:gap-6 w-full">
             {prices.map((price) => (
-              <PriceCard name={price.name} cost={price.cost} duration={price.duration}/>
+              <PriceCard
+                name={price.name}
+                cost={price.cost}
+                duration={price.duration}
+                text={price.text}
+              />
             ))}
           </div>
           {/* </Reveal> */}
