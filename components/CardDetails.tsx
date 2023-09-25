@@ -11,7 +11,6 @@ interface CarDetailsProps {
 }
 
 const CarDetails = ({ isOpen, closeModal, index }: CarDetailsProps) => {
-  console.log("opened");
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
