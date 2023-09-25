@@ -31,7 +31,7 @@ const AboutUs = () => {
             alt="second image"
             width={100}
             height={100}
-            className="md:block hidden object-contain rounded-3xl z-20 absolute -right-16 top-52" // Position the second image absolutely to the top-left
+            className="xl:block hidden object-contain rounded-3xl z-20 absolute -right-16 top-52" // Position the second image absolutely to the top-left
           />
         </div>
       </div>
@@ -46,7 +46,7 @@ const AboutUs = () => {
         <Reveal>
           <p className="text-[17px] text-[#191717] font-light mt-5">
             At Khalil Meals, we understand the hectic life of a student.
-            Balancing classes, assignments, and extracurricular activities can
+            Balancing classes, assignments and extracurricular activities can
             leave little time for preparing healthy meals. That's where we come
             in.
           </p>

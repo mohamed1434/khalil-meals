@@ -21,6 +21,10 @@ export const navbarItems = [
     id: "about",
   },
   {
+    name: "Pricing",
+    id: "pricing",
+  },
+  {
     name: "Contact",
     id: "contact",
   },
@@ -115,3 +119,26 @@ export const socialIcons = [
     icon: <WhatsappLogo size={36} color="#F7F7F7" weight="bold" />,
   },
 ];
+
+export const prices = [
+  {
+    name: "Basic",
+    cost: 50.000,
+    duration: "2 weeks",
+  },
+  {
+    name: "Standard",
+    cost: 90.000,
+    duration: "1 month",
+  },
+  {
+    name: "Advanced",
+    cost: 160.000,
+    duration: "2 months",
+  },
+  {
+    name: "Premium",
+    cost: 240.000,
+    duration: "3 months",
+  },
+]

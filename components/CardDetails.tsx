@@ -8,7 +8,6 @@ interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
   index: number;
-  //   food: {};
 }
 
 const CarDetails = ({ isOpen, closeModal, index }: CarDetailsProps) => {
